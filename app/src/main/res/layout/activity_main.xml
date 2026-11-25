@@ -16,49 +16,54 @@ android:fillViewport="true">
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="49dp"
             android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
+
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="210dp"
+            android:layout_width="226dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="82dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            tools:visibility="visible" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="210dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="268dp"
+            android:layout_marginTop="217dp"
+            android:layout_marginEnd="76dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="210dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#000000"
             android:ems="10"
-            android:inputType="text"
             android:text="Welcome to Booking app"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
